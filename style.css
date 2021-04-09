@@ -104,7 +104,7 @@ body {
 .slide-college {
     display: flex;
     width: 50%;
-    height: 75%;
+    height: 55%;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
@@ -156,6 +156,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 50%;
+    margin-top: 32px;
 }
 .slide-college-end img {
     width: 400px;
