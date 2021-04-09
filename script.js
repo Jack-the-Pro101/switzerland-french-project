@@ -1,12 +1,10 @@
 'use strict';
 
 let keyPressed;
-let currentSlide;
 
 document.addEventListener("keydown", e => {
-    keyPressed = e.code
 
-    switch (keyPressed)
+    switch (e.code)
     {
     case 'ArrowRight':
         alert('>')
@@ -20,3 +18,9 @@ document.addEventListener("keydown", e => {
     }
 });
 
+function ending()
+{    
+    document.querySelector('.end').style.display = 'none';
+    document.querySelector('.endingTime').style.display = 'flex';
+    document.getElementById('yee').play();
+}

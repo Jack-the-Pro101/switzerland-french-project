@@ -65,13 +65,13 @@ body {
 
 /* --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- --- */
 .slide {
-    height: 95vh;
+    height: 100vh;
     padding: 24px;
     position: relative;
     overflow: hidden;
 }
 .slide-header {
-    background: rgb(234, 239, 247);
+    background: rgb(200, 208, 219);
     width: 100vw;
     padding: 28px 16px;
     cursor: pointer;
@@ -93,9 +93,9 @@ body {
     color: black;
 }
 .slide-content p {
-    max-width: 45%;
+    max-width: 40%;
     font-size: 28px;
-    line-height: 110%;
+    line-height: 120%;
 }
 .slide-img {
     width: 500px;
@@ -108,22 +108,100 @@ body {
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-.slide-college img {
-    display: block;
-    position: relative;
+.slide-college__image {
     width: 45%;
-    height: auto;
-    background: gray;
+    height: 45%;
     margin-bottom: 8px;
+    transition-duration: 350ms;
+    position: relative;
 }
-#matter-horn::after {
+.slide-college__image img {
+    height: 100%;
+    width: auto;
+}
+.matterhorn::after {
     content: 'Matter Horn';
     position: absolute;
     bottom: 0;
     left: 0;
-    padding: 8px;
-    color: white;
     font-size: 16px;
-    z-index: 1;
+    color: white;
+    padding: 8px;
     text-shadow: 0px 0px 6px black;
+}
+.fondue::after {
+    content: 'Fondue au fromage';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+    color: white;
+    padding: 8px;
+    text-shadow: 0px 0px 6px black;
+}
+.stadium::after {
+    content: 'Tissot-Arena';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 16px;
+    color: white;
+    padding: 8px;
+    text-shadow: 0px 0px 6px black;
+}
+
+
+
+.slide-college-end {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.slide-college-end img {
+    width: 400px;
+    height: auto;
+}
+
+
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.end button {
+    padding: 48px;
+    font-size: 64px;
+    color: goldenrod;
+    border: 5px outset silver;
+    transition-duration: 3s;
+    outline: none;
+}
+.end button:hover {
+    background: red;
+    cursor: pointer;
+}
+.end button:active {
+    border: 5px inset silver;
+    cursor: not-allowed ;
+}
+.endingTime {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100vh;
+}
+.endingTime img {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+.endingTime video {
+    width: 30vh;
+    height: auto;
+    z-index: 9999;
 }
